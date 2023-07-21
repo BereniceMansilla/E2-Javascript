@@ -49,6 +49,7 @@ const pizzas = [
 ];
 
 // traer id inpares
+console.log(`Ejercicio a):`);
 
 const idInpares = pizzas.filter((ingredientes) => {
   return ingredientes.id % 2 === 1;
@@ -61,6 +62,7 @@ idInpares.forEach((ingredientes) => {
 });
 
 // pizzas con precio mayor a 600
+console.log(`Ejercicio b):`);
 
 const ProductosConPrecioMenorA = (precio) => {
   return pizzas.some((producto) => {
@@ -73,6 +75,7 @@ const ProductosConPrecioMenorA = (precio) => {
 ProductosConPrecioMenorA(600);
 
 // pizzas con su precio
+console.log(`Ejercicio c):`);
 
 const NombreDePizzaYPrecio = pizzas.filter((pizza) => {
   return pizza.nombre && pizza.precio
@@ -83,6 +86,7 @@ NombreDePizzaYPrecio.forEach((pizza) => {
 });
 
 // Todos los Ingredientes de las pizzas
+console.log(`Ejercicio d):`);
 
 const NombreDePizzaEIngredientes = pizzas.filter((pizza) => {
   return pizza.nombre && pizza.ingredientes
